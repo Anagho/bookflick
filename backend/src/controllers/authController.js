@@ -62,6 +62,7 @@ export const register = async (req, res) => {
         username: user.username,
         email: user.email,
         profileImage: user.profileImage,
+        createdAt: user.createdAt,
       },
       message: "User registered successfully",
     });
@@ -103,6 +104,7 @@ export const login = async (req, res) => {
         username: user.username,
         email: user.email,
         profileImage: user.profileImage,
+        createdAt: user.createdAt,
       },
     });
     console.log("User logged in successfully");
