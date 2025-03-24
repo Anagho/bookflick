@@ -49,8 +49,8 @@ export const getBooks = async (req, res) => {
 
     res.send({
         books,
-        currentPage: page,
-        totalBooks,
+        // currentPage: page,
+        // totalBooks,
         totalPages: Math.ceil(totalBooks / limit),
     });
   } catch (error) {
